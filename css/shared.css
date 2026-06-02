@@ -1,0 +1,35 @@
+:root {
+  --black: #000000;
+  --deep-black: #010204;
+  --navy: #05070d;
+  --navy-soft: #0a0f1c;
+  --blue-accent: #0a2a6f;
+  --blue-accent-soft: #08152e;
+  --text: #e8ecff;
+  --muted: #9aa3c5;
+  --card: #0b0e18;
+  --border: #151a2a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(var(--deep-black), var(--black));
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+button {
+  font-family: inherit;
+}
+
+a {
+  color: var(--blue-accent);
+}
