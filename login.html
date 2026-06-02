@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NovaTop • Login</title>
+  <link rel="stylesheet" href="css/shared.css">
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  <script src="js/auth.js" defer></script>
+  <style>
+    .login-wrap {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--deep-black);
+    }
+    .login-card {
+      width: 320px;
+      background: var(--navy-soft);
+      border-radius: 12px;
+      padding: 24px 22px;
+      border: 1px solid var(--border);
+    }
+    h2 {
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+    p {
+      margin-bottom: 12px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    input {
+      width: 100%;
+      padding: 9px 10px;
+      margin: 6px 0;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--navy);
+      color: var(--text);
+      font-size: 13px;
+    }
+    .btn-primary, .btn-secondary {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border-radius: 6px;
+      border: none;
+      font-weight: 600;
+      font-size: 13px;
+    }
+    .btn-primary {
+      background: var(--blue-accent);
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background: var(--blue-accent-soft);
+    }
+    .btn-secondary {
+      background: #22252f;
+      color: var(--muted);
+    }
+    #auth-error {
+      margin-top: 6px;
+      min-height: 14px;
+      font-size: 11px;
+      color: #ff4b6a;
+    }
+    .login-footer {
+      margin-top: 10px;
+      font-size: 11px;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .login-footer a {
+      color: var(--blue-accent);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-wrap">
+    <div class="login-card">
+      <h2>Sign in to NovaTop</h2>
+      <p>Use email + password. If the account doesn’t exist, NovaTop will create it.</p>
+
+      <input id="email" type="email" placeholder="you@example.com">
+      <input id="password" type="password" placeholder="password (not real)">
+
+      <button class="btn-primary" id="login-btn">Continue</button>
+      <button class="btn-secondary" id="demo-btn">Demo mode</button>
+
+      <div id="auth-error"></div>
+
+      <div class="login-footer">
+        <span>Prototype • Don’t use real passwords.</span>
+        <a href="index.html">Back</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
