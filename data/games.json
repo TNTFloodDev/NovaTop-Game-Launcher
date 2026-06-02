@@ -1,0 +1,42 @@
+[
+  {
+    "id": "trcc",
+    "title": "Treasure Rush: Cave Climb",
+    "price": "Free",
+    "tag": "Platformer",
+    "desc": "Fast vertical platformer with traps, coins, and chaos.",
+    "rating": 4.8,
+    "reviews": 132,
+    "featured": true
+  },
+  {
+    "id": "abp",
+    "title": "A Better Place: World Viewer",
+    "price": "Free",
+    "tag": "World",
+    "desc": "Explore the rebuilt world, tour builds, and relive the lore.",
+    "rating": 4.6,
+    "reviews": 89,
+    "featured": false
+  },
+  {
+    "id": "rcs",
+    "title": "Rollercoaster Sim",
+    "price": "$4.99",
+    "tag": "Simulation",
+    "desc": "Design, ride, and break physics with ridiculous coasters.",
+    "rating": 4.2,
+    "reviews": 54,
+    "featured": false
+  },
+  {
+    "id": "lab",
+    "title": "NovaTop Lab",
+    "price": "Free",
+    "tag": "Tools",
+    "desc": "Experimental apps, prototypes, and weird ideas in one place.",
+    "rating": 4.9,
+    "reviews": 23,
+    "featured": false
+  }
+]
