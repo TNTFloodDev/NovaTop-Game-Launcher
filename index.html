@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NovaTop Launcher</title>
+  <link rel="stylesheet" href="css/shared.css">
+  <style>
+    .landing-wrap {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      background: linear-gradient(var(--navy), var(--deep-black));
+      text-align: center;
+    }
+    h1 {
+      font-size: 36px;
+      font-weight: 700;
+    }
+    p {
+      color: var(--muted);
+      font-size: 14px;
+      max-width: 360px;
+    }
+    .btn-main {
+      padding: 12px 22px;
+      border-radius: 8px;
+      border: none;
+      background: var(--blue-accent);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .btn-main:hover {
+      background: var(--blue-accent-soft);
+    }
+    .link-secondary {
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .link-secondary a {
+      color: var(--blue-accent);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="landing-wrap">
+    <h1>NovaTop</h1>
+    <p>Dark‑blue, full‑screen web launcher with accounts, store, library, and Game of the Week.</p>
+    <a href="login.html">
+      <button class="btn-main">Enter NovaTop</button>
+    </a>
+    <div class="link-secondary">
+      or <a href="app.html">jump straight into the prototype</a>
+    </div>
+  </div>
+</body>
+</html>
