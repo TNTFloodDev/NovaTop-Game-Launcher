@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NovaTop • Launcher</title>
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <div class="header-left">
+        <div class="logo">N</div>
+        <div class="header-title">
+          <span>NovaTop</span>
+          <span id="subtitle">Launcher Prototype</span>
+        </div>
+      </div>
+      <nav>
+        <button class="nav-btn active" data-page="store">Store</button>
+        <button class="nav-btn" data-page="library">Library</button>
+        <button class="nav-btn" data-page="settings">Settings</button>
+        <span id="user-pill">Checking session…</span>
+        <button id="logout-btn">Logout</button>
+      </nav>
+    </header>
+
+    <main>
+      <aside>
+        <div class="side-section">
+          <div class="side-title">Browse</div>
+          <button class="side-item active" data-page="store">Featured</button>
+          <button class="side-item" data-page="library">Your Library</button>
+        </div>
+        <div class="side-section">
+          <div class="side-title">System</div>
+          <button class="side-item" data-page="settings">Settings</button>
+        </div>
+        <div class="side-footer">
+          NovaTop v0.1<br>
+          GOTW • Reviews (soon) • Credits (soon)
+        </div>
+      </aside>
+
+      <section id="content">
+        <!-- STORE -->
+        <div id="page-store" class="page active">
+          <div class="page-header">
+            <div>
+              <h2>Store</h2>
+              <p class="page-subtitle">Game of the Week is highlighted at the top.</p>
+            </div>
+          </div>
+
+          <div class="gotw">
+            <div>
+              <h3 id="gotw-title">Game of the Week</h3>
+              <p id="gotw-desc">Random featured game.</p>
+              <span id="gotw-tag" class="gotw-tag">Featured</span>
+            </div>
+            <div class="gotw-rating" id="gotw-rating">—</div>
+          </div>
+
+          <div id="store-list" class="game-grid"></div>
+        </div>
+
+        <!-- LIBRARY -->
+        <div id="page-library" class="page">
+          <div class="page-header">
+            <div>
+              <h2>Your Library</h2>
+              <p class="page-subtitle">Games you’ve added from the store.</p>
+            </div>
+          </div>
+          <div id="library-list"></div>
+        </div>
+
+        <!-- SETTINGS -->
+        <div id="page-settings" class="page">
+          <div class="page-header">
+            <div>
+              <h2>Settings</h2>
+              <p class="page-subtitle">Theme + account info. Payments and credits later.</p>
+            </div>
+          </div>
+
+          <div class="settings-grid">
+            <div class="settings-card">
+              <h3>Appearance</h3>
+              <div class="settings-row">
+                <span>Theme</span>
+                <select id="theme-select">
+                  <option value="dark" selected>Dark blue</option>
+                  <option value="softer">Softer blue</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="settings-card">
+              <h3>Account</h3>
+              <div class="settings-row">
+                <span id="settings-email">Email: —</span>
+              </div>
+              <div class="settings-row">
+                <span id="settings-status">Status: Checking…</span>
+              </div>
+              <div class="settings-row">
+                <span>Logout</span>
+                <button class="btn-outline" id="settings-logout-btn">Sign out</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
